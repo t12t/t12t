@@ -14,11 +14,13 @@ Temporärt repo för t12t-webbsida
 * Then install Jekyll is via RubyGems:
 
 ```gem install jekyll
+```
 
 * Install Jekyll-Sass
 * Checkout project
 * Go to directory in Terminal and type 
 
 ```jekyll --auto --server
+```
 
 * Hopefully you are good to go ^.^
