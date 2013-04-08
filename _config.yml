@@ -1,0 +1,14 @@
+#feed config
+name: t12t
+description: Jobbar fett mycket för att inspirera och förbättra kunskapen runt webb och tillgänglighet.
+url: http://t12t.se
+
+#general config
+auto: true
+markdown: rdiscount
+permalink: /:year/:month/:day/:title
+rdiscount extensions: [smart]
+
+sass:
+    syntax: scss        # scss|sass
+    style:  compressed  # nested|expanded|compact|compressed
