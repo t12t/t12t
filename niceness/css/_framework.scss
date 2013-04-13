@@ -1,1 +1,51 @@
-/*when we gotz design we will put framework here*/
+
+/*@group Header*/
+header{
+	color:$contrasting-color;	
+	
+	a{
+		color:$contrasting-color;
+	}
+}
+.our-wellknown-logo{
+	font-size:3.25em;
+	font-family: $header-font;
+	padding: 2.777777778%;
+	display:block;
+
+	a{
+		display:block;
+	}
+}
+/*@group Navz*/
+nav{
+	position:absolute;
+	top:5%;
+	right:10%;
+
+	ul{
+		list-style:none;
+		overflow:hidden;
+
+		li{
+			float:left;
+
+			a{
+				display:block;
+				padding:20px;
+				white-space:nowrap;
+			}
+		}
+	}
+}
+/*@end Navz */
+/*@end Header*/
+
+/*@group Feet*/
+.related-feet{
+	
+	h2{
+		color:$contrasting-color;
+	}
+}
+/*@end Feet*/

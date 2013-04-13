@@ -66,8 +66,8 @@ audio:not([controls]) {
  */
 
 html {
-    background: #fff; /* 1 */
-    color: #000; /* 2 */
+    background: #2b1f1a; /* 1 */
+    color: #fff; /* 2 */
     font-family: sans-serif; /* 3 */
     -ms-text-size-adjust: 100%; /* 4 */
     -webkit-text-size-adjust: 100%; /* 4 */
@@ -91,15 +91,6 @@ body {
 
 a:focus {
     outline: thin dotted;
-}
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-
-a:active,
-a:hover {
-    outline: 0;
 }
 
 /* ==========================================================================
