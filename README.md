@@ -18,6 +18,11 @@ gem install jekyll
 ```
 
 * Install Jekyll-Sass
+
+```
+gem install jekyll-sass
+```
+
 * Checkout project
 * Go to directory in Terminal and type 
 
@@ -25,4 +30,4 @@ gem install jekyll
 jekyll --auto --server
 ```
 
-* Hopefully you are good to go at localhost:4000 ^.^
+* Hopefully you are good to go at [localhost:4000](http://localhost:4000) ^.^
