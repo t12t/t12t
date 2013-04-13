@@ -1,6 +1,6 @@
 ---
 layout: layout
-title: Om t12t
+title: N00b-tips
 ---
 
 #N00b-tips

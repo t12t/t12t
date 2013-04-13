@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-    <!-- Använd inte maximum-scale=1.0 eller user-scalable=0. Låt folk zooma. Alla har inte lika perfekta ögon som du. -->
+    <!-- Använd inte maximum-scale=1.0 eller user-scalable=0. Låt folk zooma. Alla har inte perfekt syn. -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %} {{ page.title }} - {% endif %} t12t</title>
     <link rel="stylesheet" href="/niceness/css/t12t-style.css">
@@ -15,12 +15,20 @@
     {% else %}
       <a href="/" class="our-wellknown-logo">#t12t</a>
     {% endif %}
-      <nav>
-        <ul>
-          <li><a href="/">Start</a></li>
-          <li><a href="/om-t12t/">Om t12t</a></li>
-          <li><a href="/meetups/">Meetups</a></li>
-          <li><a href="/n00b-tips/">N00b-tips</a></li>
+    <nav>
+      <ul>
+          {% for link in site.navigation %}
+            {% assign current = link.url  | append:'index.html' %}
+            {% if current == page.url %}
+              <li>
+                <a class="current" href="{{ link.url }}">{{ link.text }}</a>
+              </li>
+            {%else%}
+            <li>
+              <a href="{{ link.url }}">{{ link.text }}</a>
+            </li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </nav>
     </header>

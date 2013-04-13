@@ -12,3 +12,18 @@ rdiscount extensions: [smart]
 sass:
     syntax: scss        # scss|sass
     style:  compressed  # nested|expanded|compact|compressed
+
+# our Navz
+navigation:
+- text: Start
+  url: /
+  permalink: /
+- text: Om t12t
+  url: /om-t12t/
+  permalink: /
+- text: Meetups
+  url: /meetups/
+  permalink: /
+- text: N00b-tips
+  url: /n00b-tips/
+  permalink: /
