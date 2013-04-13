@@ -3,8 +3,12 @@ layout: layout
 title: Startsida för t12t
 ---
 
-	<h2>Hej webbtillgänglighet!</h2>
-	<p>t12t, står för tillgänglighet och är den svenska motsvarigheten till a11y, accessibility. Här sysslar vi med tillgängligheten på webben. Vi har meetups och vi försöker i allmänhet och på denna sajten i synnerhet att sprida kunskap och tips.</p>
+	<div class="introduction">
+		<h2>Hej webbtillgänglighet!</h2>
+		<p>
+			t12t, står för tillgänglighet och är den svenska motsvarigheten till a11y, accessibility. Här sysslar vi med tillgängligheten på webben. Vi har meetups och vi försöker i allmänhet och på denna sajten i synnerhet att sprida kunskap och tips.
+		</p>
+	</div>
     <ul>{% for post in site.posts %}
       <li>
 	 <time>{{ post.date | date: "%B %e, %Y" }} </time><a href="{{ post.url }}">{{ post.title }}</a>
