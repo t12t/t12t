@@ -1,40 +1,12 @@
-<!DOCTYPE HTML>
-<html lang="sv">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-    <!-- Använd inte maximum-scale=1.0 eller user-scalable=0. Låt folk zooma. Alla har inte perfekt syn. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %} {{ page.title }} - {% endif %} t12t</title>
-    <link rel="stylesheet" href="/niceness/css/t12t-style.css">
-  </head>
-  <body>
-    <header>
-    {% if page.url == '/index.html' %}
-      <h1 class="our-wellknown-logo"><a href="/">#t12t</a></h1>
-    {% else %}
-      <a href="/" class="our-wellknown-logo">#t12t</a>
-    {% endif %}
-    <nav>
-      <ul>
-          {% for link in site.navigation %}
-            {% assign current = link.url  | append:'index.html' %}
-            {% if current == page.url %}
-              <li>
-                <a class="current" href="{{ link.url }}">{{ link.text }}</a>
-              </li>
-            {%else%}
-            <li>
-              <a href="{{ link.url }}">{{ link.text }}</a>
-            </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </nav>
-    </header>
-    <main role="main">
-        {{ content }}
-    </main>
+{% include hat.html %}
+  {% include hat.html %}
+    <body>
+    {% include header.html %}
+    <div class="main-package">
+      <main role="main">
+          {{ content }}
+      </main>
+    </div>
     {% include feet.html %}
   </body>
 </html>

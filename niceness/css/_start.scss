@@ -1,7 +1,25 @@
+.start main{
+	padding:0;
+}
+
+.start .package{
+	overflow: hidden;
+	padding:2.777777778% 7.87037037%;
+}
+
+.introduction-package{
+	background: $main-color;
+}
+
 .introduction{
 	max-width:575px;
+	float:right;
 
 	h2{
 		font-size:3em;
+	}
+
+	h2, p{
+		color: $contrasting-color;
 	}
 }

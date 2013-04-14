@@ -1,0 +1,10 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+    <!-- Använd inte maximum-scale=1.0 eller user-scalable=0. Låt folk zooma. Alla har inte perfekt syn. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %} {{ page.title }} - {% endif %} t12t</title>
+    <link rel="stylesheet" href="/niceness/css/t12t-style.css">
+  </head>
