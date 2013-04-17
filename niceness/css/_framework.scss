@@ -20,9 +20,11 @@ header{
 }
 /*@group Navz*/
 nav{
-	position:absolute;
-	top:5%;
-	right:10%;
+	@media screen and (min-width: $break-small) {
+		position:absolute;
+		top:5%;
+		right:10%;
+	}
 
 	ul{
 		list-style:none;
@@ -34,6 +36,7 @@ nav{
 			a{
 				display:block;
 				padding:10px 20px;
+				margin:1px; /*makes the outline more visible in fx*/
 				white-space:nowrap;
 			}
 
@@ -66,6 +69,11 @@ nav{
 	
 	h2{
 		color:$contrasting-color;
+	}
+
+	ul{
+		margin: 0;
+		padding: 0;
 	}
 }
 /*@end Feet*/

@@ -12,11 +12,16 @@
 }
 
 .introduction{
-	max-width:575px;
-	float:right;
+	@media screen and (min-width: $break-small) {
+		max-width:575px;
+		float:right;
+	}
 
 	h2{
-		font-size:3em;
+		font-size: 2.5em;
+		@media screen and (min-width: $break-small) {
+			font-size:3em;
+		}
 	}
 
 	h2, p{
