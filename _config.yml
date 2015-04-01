@@ -22,10 +22,10 @@ version:          1.0.0
 github:
   repo:           https://github.com/t12t
 
-# #feed config
-# name: t12t
-# description: Jobbar fett mycket för att inspirera och förbättra kunskapen runt webb och tillgänglighet.
-# url: http://t12t.se
+#feed config
+name: t12t
+description: Jobbar för att inspirera och förbättra kunskapen runt webb och tillgänglighet.
+url: http://t12t.se
 
 # #general config
 # auto: true
