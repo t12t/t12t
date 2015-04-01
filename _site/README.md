@@ -10,21 +10,22 @@ Temporärt repo för t12t-webbsida
 
 ## Setting up stuff
 
-* Make sure Ruby is up to date v.1.9.1 or whatever version they say it should be at [Jekyll](https://github.com/mojombo/jekyll/)
-* Then install Jekyll via RubyGems:
+* Make sure Ruby is up to date v.1.9.3 or 2+.
+* Clone project.
+* Go to project-directory in Terminal.
+* Install Bundler:
 
 ```
-gem install jekyll
+gem install bundler
 ```
 
-* Install Jekyll-Sass
+* Then install Jekyll via Bundler:
 
 ```
-gem install jekyll-sass
+bundler install
 ```
 
-* Checkout project
-* Go to directory in Terminal and type 
+
 
 ```
 jekyll --auto --server

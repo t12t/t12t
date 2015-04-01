@@ -1,33 +1,37 @@
-t12t-temp
+t12t
 =========
 
-Temporärt repo för t12t-webbsida
+The t12t Website
 
 ## Dependencies
 
+* [Ruby](https://www.ruby-lang.org/en/)
+* [RubyGems](https://rubygems.org/)
+* [Bundler](http://bundler.io/)
 * [Jekyll](https://github.com/mojombo/jekyll/)
-* [Jekyll-Sass](https://github.com/noct/jekyll-sass)
 
 ## Setting up stuff
 
-* Make sure Ruby is up to date v.1.9.1 or whatever version they say it should be at [Jekyll](https://github.com/mojombo/jekyll/)
-* Then install Jekyll via RubyGems:
+* Make sure Ruby is up to date v.1.9.3 or 2+.
+* Make sure Gem is available and updated.
+* Clone project.
+* Go to project-directory in Terminal.
+* Install Bundler:
 
 ```
-gem install jekyll
+gem install bundler
 ```
 
-* Install Jekyll-Sass
+* Then install Jekyll via Bundler:
 
 ```
-gem install jekyll-sass
+bundler install
 ```
 
-* Checkout project
-* Go to directory in Terminal and type 
+* Run Jekyll
 
 ```
-jekyll --auto --server
+bundle exec jekyll serve
 ```
 
 * Hopefully you are good to go at [localhost:4000](http://localhost:4000) ^.^

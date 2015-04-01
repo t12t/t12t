@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>t12t</title>
-		<description>Jobbar fett mycket för att inspirera och förbättra kunskapen runt webb och tillgänglighet.</description>
+		<title></title>
+		<description></description>
 		<link>http://t12t.se</link>
 		<atom:link href="http://t12t.se/feed.xml" rel="self" type="application/rss+xml" />
 		
@@ -11,8 +11,8 @@
 				<description>&lt;p&gt;This is a test post writen in markdown. To learn more about markdown check out the &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;documentation&lt;/a&gt; on &lt;a href=&quot;http://daringfireball.net/&quot;&gt;Daring Fireball&lt;/a&gt;.&lt;/p&gt;
 </description>
 				<pubDate>Sat, 26 Oct 1985 00:00:00 +0100</pubDate>
-				<link>http://t12t.se/1985/10/26/Test-Post</link>
-				<guid isPermaLink="true">http://t12t.se/1985/10/26/Test-Post</guid>
+				<link>http://t12t.se/1985/10/26/Test-Post/</link>
+				<guid isPermaLink="true">http://t12t.se/1985/10/26/Test-Post/</guid>
 			</item>
 		
 	</channel>

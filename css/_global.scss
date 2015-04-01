@@ -1,14 +1,14 @@
 /*@group Global styles*/
 article, aside, figure, footer, header, hgroup,
-menu, nav, section { 
-	display: block; 
+menu, nav, section {
+	display: block;
 }
 html{
 	margin:0;
 	padding:0;
 }
 body {
-	color: $main-color; 
+	color: $main-color;
 	font-weight: normal;
 	font-size: 100%;
 	font-family: $body-font;
@@ -16,7 +16,7 @@ body {
 	padding:40px 0;
 }
 main{
-	padding:2.777777778% 7.87037037%;
+	padding:2.777777778% 0;
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: $header-font;
