@@ -27,27 +27,22 @@ name: t12t
 description: Jobbar för att inspirera och förbättra kunskapen runt webb och tillgänglighet.
 url: http://t12t.se
 
-# #general config
-# auto: true
-# markdown: rdiscount
-# permalink: /:year/:month/:day/:title
-# rdiscount extensions: [smart]
+#general config
+markdown: rdiscount
+permalink: /:year/:month/:day/:title
+rdiscount extensions: [smart]
 
-# sass:
-#     syntax: scss        # scss|sass
-#     style:  compressed  # nested|expanded|compact|compressed
-
-# # our Navz
-# navigation:
-# - text: Start
-#   url: /
-#   permalink: /
-# - text: Om t12t
-#   url: /om-t12t/
-#   permalink: /
-# - text: Meetups
-#   url: /meetups/
-#   permalink: /
-# - text: N00b-tips
-#   url: /n00b-tips/
-#   permalink: /
+# our Navz
+navigation:
+- text: Start
+  url: /
+  permalink: /
+- text: Om t12t
+  url: /om-t12t/
+  permalink: /
+- text: Meetups
+  url: /meetups/
+  permalink: /
+- text: N00b-tips
+  url: /n00b-tips/
+  permalink: /
