@@ -22,17 +22,17 @@ version:          1.0.0
 github:
   repo:           https://github.com/t12t
 
-#feed config
+#Feed config
 name: t12t
 description: Jobbar för att inspirera och förbättra kunskapen runt webb och tillgänglighet.
 url: http://t12t.se
 
-#general config
+#General config
 markdown: rdiscount
 permalink: /:year/:month/:day/:title
 rdiscount extensions: [smart]
 
-# our Navz
+# Our navz
 navigation:
 - text: Start
   url: /
