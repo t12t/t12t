@@ -1,30 +1,79 @@
+.start{
+    background: $main-color; /* Old browsers */
+    background: #2b1f1a; /* Old browsers */
+    background: -moz-linear-gradient(top,  #2b1f1a 0%, #3b2d27 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  #2b1f1a 0%,#3b2d27 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #2b1f1a 0%,#3b2d27 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #2b1f1a 0%,#3b2d27 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #2b1f1a 0%,#3b2d27 100%); /* W3C */
+}
 .start main{
-	padding:0;
+    padding: 0;
+    position: relative;
 }
-
 .start .package{
-	overflow: hidden;
-	padding:2.777777778% 7.87037037%;
+    padding:2.777777778% 7.87037037%;
 }
-
 .introduction-package{
-	background: $main-color;
+    background: transparent;
 }
-
 .introduction{
-	@media screen and (min-width: $break-small) {
-		max-width:575px;
-		float:right;
-	}
+    @media screen and (min-width: $break-small) {
+        max-width:575px;
+        float:right;
+    }
 
-	h2{
-		font-size: 2.5em;
-		@media screen and (min-width: $break-small) {
-			font-size:3em;
-		}
-	}
-
-	h2, p{
-		color: $contrasting-color;
-	}
+    h2{
+        font-size: 2.5em;
+        @media screen and (min-width: $break-small) {
+            font-size:3em;
+        }
+    }
+}
+h2, p{
+    color: $contrasting-color;
+}
+.mole{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    top: 49px;
+}
+@-webkit-keyframes pawmove{
+        50%{
+        transform: translate3d(20px, 0, 0);
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes pawmove{
+    50%{
+        transform: translate3d(20px, 0, 0);
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+    }
+}
+.paws{
+    animation-name: pawmove;
+     -webkit-animation-name: pawmove;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-iteration-count: 3;
+    -webkit-animation-iteration-count: 3;
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+}
+@media screen and (min-width: $break-medium) {
+    .start .package{
+        overflow: hidden;
+    }
+    .mole{
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 5px;
+        z-index: 1;
+    }
 }
