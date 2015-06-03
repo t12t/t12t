@@ -24,7 +24,7 @@ html{
 }
 
 body {
-    background: $main-color;
+    background: $zeus;
     color: $white;
     font-weight: normal;
     font-size: 100%;
@@ -35,7 +35,7 @@ body {
 }
 main{
     padding:2.777777778% 0;
-    color: $main-color;
+    color: $zeus;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: $header-font;
@@ -60,7 +60,7 @@ p{
     margin: 0 0 20px 0;
 }
 a{
-    color: $link-color;
+    color: $blaze-orange;
     text-decoration:none;
 }
 a:hover,

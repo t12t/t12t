@@ -1,9 +1,9 @@
 /*@group Header*/
 header{
-    color:$contrasting-color;
+    color:$white;
 
     a{
-        color:$contrasting-color;
+        color:$white;
     }
 }
 .our-wellknown-logo{
@@ -40,7 +40,7 @@ nav{
             }
 
             .current{
-                background:$link-color;
+                background:$blaze-orange;
                 border-radius:5px;
             }
         }
@@ -67,7 +67,7 @@ nav{
 .related-feet{
 
     h2{
-        color:$contrasting-color;
+        color:$white;
     }
 
     ul{
