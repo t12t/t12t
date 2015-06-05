@@ -36,4 +36,4 @@ bundle exec jekyll serve
 
 * Hopefully you are good to go at [localhost:4000](http://localhost:4000) ^.^
 
-Ps. If you get problems with Nokogiri during the install [https://gist.github.com/Kolombiken/f9f52b826d6ffeaad662](here's a gist for you).
+Ps. If you get problems with Nokogiri during the install [here's a gist for you](https://gist.github.com/Kolombiken/f9f52b826d6ffeaad662).
