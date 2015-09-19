@@ -43,6 +43,6 @@ navigation:
 - text: Meetups
   url: /meetups/
   permalink: /
-- text: N00b-tips
-  url: /n00b-tips/
+- text: Hack
+  url: /hack/
   permalink: /
