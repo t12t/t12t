@@ -1,23 +1,8 @@
 <header>
-{% if page.url == '/index.html' %}
-  <h1 class="our-wellknown-logo"><a href="/">#t12t</a></h1>
-{% else %}
-  <a href="/" class="our-wellknown-logo">#t12t</a>
-{% endif %}
-<nav>
-  <ul>
-      {% for link in site.navigation %}
-        {% assign current = link.url  | append:'index.html' %}
-        {% if current == page.url %}
-          <li>
-            <a class="current" href="{{ link.url }}">{{ link.text }}</a>
-          </li>
-        {%else%}
-        <li>
-          <a href="{{ link.url }}">{{ link.text }}</a>
-        </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </nav>
+  <a href="/" class="our-wellknown-logo">
+      <picture>
+        <source type="image/svg+xml" srcset="/niceness/t12t-logo.svg" alt="t12t">
+        <img src="/niceness/t12t-logo.png" alt="t12t">
+      </picture>
+  </a>
 </header>
