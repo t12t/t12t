@@ -46,3 +46,6 @@ navigation:
 - text: N00b-tips
   url: /n00b-tips/
   permalink: /
+- text: Newsletter
+  url: /accessibility-newsletter/
+  permalink: /

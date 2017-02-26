@@ -1,21 +1,19 @@
 ---
-layout: start
-title: Startsida för t12t
+layout: layout
+title: Start
 ---
-<div class="package introduction-package">
-	<div class="introduction">
-		<h2>Hej webb&shy;tillgänglighet!</h2>
-		<p>
-			t12t, står för tillgänglighet och är den svenska motsvarigheten till a11y, accessibility. Här sysslar vi med tillgängligheten på webben. Vi har meetups och vi försöker i allmänhet och på denna sajten i synnerhet att sprida kunskap och tips.
-		</p>
-	</div>
-</div>
-<div class="package">
-	<ul>{% for post in site.posts %}
-		<li>
-			<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-			<time>{{ post.date | date: "%B %e, %Y" }} </time>
-			{% if post.description %}<p>{{ post.description != null }}</p>{% endif %}
-		</li>{% endfor %}
-	</ul>
-</div>
+	<h1>Hej webb&shy;tillgänglighet!</h1>
+	<p>
+		T12t, står för tillgänglighet och är den svenska motsvarigheten till a11y, accessibility. Här sysslar vi med tillgängligheten på webben. Vi har meetups och vi försöker att sprida kunskap och tips.
+	</p>
+	<h2 id="meetup">Våra meetups</h2>
+	<p>
+		Vi finns på <a href="https://www.meetup.com/t12t-Stockholm">meetup.com som t12t - Stockholm.</a> Vår målsättning är att arrangera ett par meetups varje år. Skulle du vilja vara värd för ett metup, tala eller har en idé angående ämne eller något annat så får du gärna höra av dig. Det gör du lättast på <a href="https://www.meetup.com/t12t-Stockholm/">vår meetup-sida.</a>
+	</p>
+	<h2 id="newsletter">Vårt nyhetsbrev</h2>
+	<p>
+		Från och med 2017 så testar vi att skicka ut ett nyhetsbrev. Målet är att sprida nyheter, artiklar och tips runt webbtillgänglighet. Om det går enligt planerna så blir det en till två gånger i månaden.
+	</p>
+  <p>
+    Observera att nyhetsbrevet är på engelska. Mer info och anmälan finns <a href="/accessibility-newsletter">på nyhetsbrev-sidan.</a>
+  </p>
