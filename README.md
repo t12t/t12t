@@ -1,39 +1,54 @@
-t12t
-=========
+# t12t
 
-The t12t Website
+The t12t.se Site
 
-## Dependencies
+## Develop
 
-* [Ruby](https://www.ruby-lang.org/en/)
-* [RubyGems](https://rubygems.org/)
-* [Bundler](http://bundler.io/)
-* [Jekyll](https://github.com/mojombo/jekyll/)
+The site is [built with Gatsby](https://www.gatsbyjs.org/).
 
-## Setting up stuff
+Make sure you got all of this on your computer before starting:
 
-* Make sure Ruby is up to date v.1.9.3 or 2+.
-* Make sure Gem is available and updated.
-* Clone project.
-* Go to project-directory in Terminal.
-* Install Bundler:
+* [Node](https://nodejs.org/en/)
+* [Yarn](https://yarnpkg.com/lang/en/docs/install/) 
+* [Gatsby-cli](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-cli)
+
+
+
+Run the following command in your terminal to install node modules:
 
 ```
-gem install bundler
+yarn install
 ```
 
-* Then install Jekyll via Bundler:
+Then run this to start the site in development-mode:
 
 ```
-bundler install
+gatsby develop
 ```
 
-* Run Jekyll
+Go to your browser and be happy about `http://localhost:8000` \\(^.^)/
+
+
+## Production
+
+If you like to try out a production build run this:
 
 ```
-bundle exec jekyll serve
+gatsby build
 ```
 
-* Hopefully you are good to go at [localhost:4000](http://localhost:4000) ^.^
+You can then serve the site from the folder `public` in any way you want. 
 
-Ps. If you get problems with Nokogiri during the install [here's a gist for you](https://gist.github.com/Kolombiken/f9f52b826d6ffeaad662).
+One easy way to do this is to use [a package called serve](https://www.npmjs.com/package/serve). Install serve with: 
+
+```
+npm install -g serve
+``` 
+
+Then make sure you are in the folder `public` and run: 
+
+```
+serve
+``` 
+
+You should now be able to view the site in production mode at `http://localhost:5000`.
