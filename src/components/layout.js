@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
 import Helmet from 'react-helmet'
-import { withPrefix } from 'gatsby-link'
 
 import logo from '../goods/t12t-logo.svg'
 import '../goods/css/t12t-style.scss'
@@ -55,7 +54,7 @@ const TemplateWrapper = ({ children }) => (
     <Header />
     <div className="main-package">
       <main role="main">
-      {children()}
+      {children}
       </main>
     </div>
     <Underground />
