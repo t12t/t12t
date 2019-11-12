@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Archive = () => (
   <ul className="archive-list">
@@ -44,7 +44,7 @@ const Archive = () => (
         The Accessibility Newsletter: The Arctic Fox Edition
       </a>
     </li>
-  </ul>  
-)
+  </ul>
+);
 
-export default Archive
+export default Archive;
