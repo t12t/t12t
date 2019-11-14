@@ -1,9 +1,18 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
 
 export default function HTML(props) {
+  const {
+    htmlAttributes,
+    bodyAttributes,
+    headComponents,
+    preBodyComponents,
+    body,
+    postBodyComponents
+  } = props;
+  const { lang } = htmlAttributes;
+  const { bodyClass } = bodyAttributes;
   return (
-    <html {...props.htmlAttributes}>
+    <html lang={lang}>
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -11,29 +20,20 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        {props.headComponents}
+        {headComponents}
       </head>
-      <body {...props.bodyAttributes}>
-        {props.preBodyComponents}
+      <body className={bodyClass}>
+        {preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript">
           This app works best with JavaScript enabled.
         </noscript>
         <div
-          key={`body`}
+          key="body"
           id="___gatsby"
-          dangerouslySetInnerHTML={{ __html: props.body }}
+          dangerouslySetInnerHTML={{ __html: body }}
         />
-        {props.postBodyComponents}
+        {postBodyComponents}
       </body>
     </html>
-  )
-}
-
-HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
-  headComponents: PropTypes.array,
-  bodyAttributes: PropTypes.object,
-  preBodyComponents: PropTypes.array,
-  body: PropTypes.string,
-  postBodyComponents: PropTypes.array,
+  );
 }
