@@ -12,6 +12,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "lint": "yarn lint:css && yarn lint:js",
     "lint:css": "stylelint 'src/**/*.scss'",
     "lint:js": "eslint 'src/**/*.{js,jsx}' --quiet",
     "format": "prettier --write 'src/**/*.{js,jsx}'",
@@ -19,7 +20,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint:js"
+      "pre-commit": "yarn lint"
     }
   },
   "dependencies": {
