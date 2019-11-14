@@ -36,7 +36,7 @@ const Mailchimpform = () => (
           />
         </div>
         <div
-          style={{ position: "absolute", left: `${-5000  }px` }}
+          style={{ position: "absolute", left: `${-5000}px` }}
           aria-hidden="true"
         >
           <input

@@ -45,7 +45,7 @@ const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
       htmlAttributes={{
-        lang: 'en',
+        lang: "en"
       }}
       title="T12t"
       meta={[
@@ -54,7 +54,7 @@ const TemplateWrapper = ({ children }) => (
         { name: "theme-color", content: "#2b1f1a" },
         {
           name: "msapplication-config",
-          content: `${__PATH_PREFIX__  }/favicons/browserconfig.xml`
+          content: `${__PATH_PREFIX__}/favicons/browserconfig.xml`
         }
       ]}
     >
@@ -65,29 +65,29 @@ const TemplateWrapper = ({ children }) => (
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href={`${__PATH_PREFIX__  }/favicons/apple-touch-icon.png`}
+        href={`${__PATH_PREFIX__}/favicons/apple-touch-icon.png`}
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href={`${__PATH_PREFIX__  }/favicons/favicon-32x32.png`}
+        href={`${__PATH_PREFIX__}/favicons/favicon-32x32.png`}
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href={`${__PATH_PREFIX__  }/favicons/favicon-16x16.png`}
+        href={`${__PATH_PREFIX__}/favicons/favicon-16x16.png`}
       />
-      <link rel="manifest" href={`${__PATH_PREFIX__  }/favicons/manifest.json`} />
+      <link rel="manifest" href={`${__PATH_PREFIX__}/favicons/manifest.json`} />
       <link
         rel="mask-icon"
-        href={`${__PATH_PREFIX__  }/favicons/safari-pinned-tab.svg`}
+        href={`${__PATH_PREFIX__}/favicons/safari-pinned-tab.svg`}
         color="#f95e00"
       />
       <link
         rel="shortcut icon"
-        href={`${__PATH_PREFIX__  }/favicons/favicon.ico`}
+        href={`${__PATH_PREFIX__}/favicons/favicon.ico`}
       />
     </Helmet>
     <Header />

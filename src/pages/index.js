@@ -1,8 +1,8 @@
-import React from "react"
-import Helmet from 'react-helmet'
-import Layout from "../components/layout"
+import React from "react";
+import Helmet from "react-helmet";
+import Layout from "../components/layout";
 
-const IndexPage =() => (
+const IndexPage = () => (
   <Layout>
     <div>
       <Helmet>
@@ -33,8 +33,7 @@ const IndexPage =() => (
       </p>
       <p>
         Observera att nyhetsbrevet är på engelska. Mer info och anmälan finns{" "}
-        <a href="/accessibility-newsletter">på nyhetsbrev-sidan.
-        </a>
+        <a href="/accessibility-newsletter">på nyhetsbrev-sidan.</a>
       </p>
     </div>
   </Layout>

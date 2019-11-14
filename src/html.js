@@ -1,9 +1,16 @@
-import React from "react"
+import React from "react";
 
 export default function HTML(props) {
-  const { htmlAttributes, bodyAttributes, headComponents, preBodyComponents, body, postBodyComponents } = props
-  const { lang } = htmlAttributes
-  const { bodyClass } = bodyAttributes
+  const {
+    htmlAttributes,
+    bodyAttributes,
+    headComponents,
+    preBodyComponents,
+    body,
+    postBodyComponents
+  } = props;
+  const { lang } = htmlAttributes;
+  const { bodyClass } = bodyAttributes;
   return (
     <html lang={lang}>
       <head>
@@ -30,4 +37,3 @@ export default function HTML(props) {
     </html>
   );
 }
-
