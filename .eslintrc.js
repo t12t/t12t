@@ -2,8 +2,9 @@ module.exports = {
   globals: {
     __PATH_PREFIX__: true
   },
+  parser: 'babel-eslint',
   extends: ['airbnb', 'prettier', 'prettier/react', 'plugin:prettier/recommended'],
-  plugins: ['prettier'],
+  plugins: ['prettier', 'babel'],
   rules: {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
