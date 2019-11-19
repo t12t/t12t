@@ -5,12 +5,17 @@ import Layout from "../components/layout";
 import withI18next from "../i18n/withI18next";
 import useTranslations from "../components/useTranslations";
 
-const IndexPage = () => {
+const IndexPage = props => {
+  const { pageContext } = props;
   const { hello, subline } = useTranslations();
   return (
     <Layout>
       <div>
-        <Helmet>
+        <Helmet
+          htmlAttributes={{
+            lang: pageContext.locale
+          }}
+        >
           <title>T12t</title>
         </Helmet>
         <h1>Hej webb&shy;tillgänglighet!</h1>
